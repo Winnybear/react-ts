@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import StatefulHello from './components/StatefulHello';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+        <Hello name="TypeScript" enthusiasmLevel={10}></Hello>
+        <StatefulHello name="TypeScript" enthusiasmLevel={1}></StatefulHello>
       </header>
     </div>
   );
